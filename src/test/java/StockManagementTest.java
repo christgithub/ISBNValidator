@@ -1,9 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.awt.print.Book;
-
-import static org.junit.Assert.fail;
+import static org.mockito.Mockito.mock;
 
 public class StockManagementTest {
     @Test
@@ -33,13 +31,15 @@ public class StockManagementTest {
 
     @Test
     public void databaseIsUsedIfDataIsPresent() {
-        //ExternalISBNDataService databaseService = mock(ExternalISBNDataService.class);
-        fail("Not implemented");
+        ExternalISBNDataService databaseService = mock(ExternalISBNDataService.class);
+
+        //fail("Not implemented");
     }
 
     @Test
     public void webServiceIsUsedIfDataIsNotPresent() {
-        fail("Not implemented");
+        ExternalISBNDataService webService = mock(ExternalISBNDataService.class);
+        //fail("Not implemented");
     }
 
 }
