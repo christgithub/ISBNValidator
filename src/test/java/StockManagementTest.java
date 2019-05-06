@@ -17,6 +17,9 @@ public class StockManagementTest {
         databaseService = mock(ExternalISBNDataService.class);
         webService = mock(ExternalISBNDataService.class);
         stockManager = new StockManager();
+
+        stockManager.setWebService(webService);
+        stockManager.setDatabaseService(databaseService);
     }
 
     @After
@@ -29,11 +32,8 @@ public class StockManagementTest {
     @Test
     public void testCanGetACorrectLocatorCode() {
 
-        when(webService.lookup(isbn)).thenReturn(new Book(isbn, "Of mice of men", "J Steinbeck"));
-        when(databaseService.lookup(isbn)).thenReturn(null);
-
-        stockManager.setWebService(webService);
-        stockManager.setDatabaseService(databaseService);
+        when(webService.lookup(anyString())).thenReturn(new Book(isbn, "Of mice of men", "J Steinbeck"));
+        when(databaseService.lookup(anyString())).thenReturn(null);
 
         String locatorCode = stockManager.getLocatorCode(isbn);
         Assert.assertEquals("3504J4", locatorCode);
@@ -43,9 +43,6 @@ public class StockManagementTest {
     public void databaseIsUsedIfDataIsPresent() {
 
         when(databaseService.lookup(isbn)).thenReturn(new Book(isbn, "abc", "abc"));
-
-        stockManager.setWebService(webService);
-        stockManager.setDatabaseService(databaseService);
         stockManager.getLocatorCode(isbn);
 
         verify(databaseService, times(1)).lookup(isbn);
@@ -58,8 +55,6 @@ public class StockManagementTest {
         when(databaseService.lookup(isbn)).thenReturn(null);
         when(webService.lookup(isbn)).thenReturn(new Book(isbn, "abc", "abc"));
 
-        stockManager.setWebService(webService);
-        stockManager.setDatabaseService(databaseService);
         stockManager.getLocatorCode(isbn);
 
         verify(databaseService, times(1)).lookup(isbn);
