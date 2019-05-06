@@ -1,9 +1,23 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.*;
 
 public class StockManagementTest {
+
+    private String isbn = "0553213504";
+    ExternalISBNDataService databaseService;
+    ExternalISBNDataService webService;
+    private StockManager stockManager;
+
+    @Before
+    public void setUp() {
+        databaseService = mock(ExternalISBNDataService.class);
+        webService = mock(ExternalISBNDataService.class);
+        stockManager = new StockManager();
+    }
+
     @Test
     public void testCanGetACorrectLocatorCode() {
 
@@ -21,7 +35,6 @@ public class StockManagementTest {
             }
         };
 
-        String isbn = "0553213504";
         StockManager stockManager = new StockManager();
         stockManager.setWebService(externalWebServiceStub);
         stockManager.setDatabaseService(externalDatabaseServiceStub);
@@ -31,15 +44,29 @@ public class StockManagementTest {
 
     @Test
     public void databaseIsUsedIfDataIsPresent() {
-        ExternalISBNDataService databaseService = mock(ExternalISBNDataService.class);
 
-        //fail("Not implemented");
+        when(databaseService.lookup(isbn)).thenReturn(new Book(isbn, "abc", "def"));
+
+        stockManager.setWebService(webService);
+        stockManager.setDatabaseService(databaseService);
+        stockManager.getLocatorCode(isbn);
+
+        verify(databaseService, times(1)).lookup(isbn);
+        verify(webService, times(0)).lookup(anyString());
     }
 
     @Test
     public void webServiceIsUsedIfDataIsNotPresent() {
-        ExternalISBNDataService webService = mock(ExternalISBNDataService.class);
-        //fail("Not implemented");
+
+        when(databaseService.lookup(isbn)).thenReturn(null);
+        when(webService.lookup(isbn)).thenReturn(new Book(isbn, "abc", "abc"));
+
+        stockManager.setWebService(webService);
+        stockManager.setDatabaseService(databaseService);
+        stockManager.getLocatorCode(isbn);
+
+        verify(databaseService, times(1)).lookup(isbn);
+        verify(webService, times(1)).lookup(isbn);
     }
 
 }

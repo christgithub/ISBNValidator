@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb73395a-49ee-4939-9bd8-960f5984b0ee" name="Default Changelist" comment="" />
+    <list default="true" id="fb73395a-49ee-4939-9bd8-960f5984b0ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StockManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StockManagementTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -41,19 +44,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="26" />
-          <entry key="java" value="2959" />
+          <entry key="java" value="3289" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="26" />
-          <entry key="JAVA" value="2959" />
+          <entry key="JAVA" value="3289" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48869145">
+    <splitter split-orientation="horizontal" split-proportion="0.4394184">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -68,8 +71,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/StockManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+                <state relative-caret-position="181">
+                  <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
                   <folding>
                     <element signature="e#134#135#0" expanded="true" />
                     <element signature="e#172#173#0" expanded="true" />
@@ -116,9 +119,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/StockManagementTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+                <state relative-caret-position="194">
+                  <caret line="61" column="76" lean-forward="true" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="76" />
                   <folding>
+                    <element signature="imports" expanded="true" />
                     <element signature="e#300#301#0" expanded="true" />
                     <element signature="e#386#387#0" expanded="true" />
                     <element signature="e#560#561#0" expanded="true" />
@@ -360,7 +364,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="1931079880" />
-        <entry key="$PROJECT_DIR$" value="7753389757000" />
+        <entry key="$PROJECT_DIR$" value="7754258099000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3128480016" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
@@ -485,8 +489,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/ExternalISBNDataService.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/StockManagementTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/StockManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StockManagementTest.java" />
       </list>
     </option>
   </component>
@@ -518,17 +522,6 @@
               <item name="isbn-validator" type="b2602c69:ProjectViewProjectNode" />
               <item name="ISBNValidator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isbn-validator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ISBNValidator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isbn-validator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ISBNValidator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="isbn-validator" type="b2602c69:ProjectViewProjectNode" />
@@ -577,7 +570,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556810491139" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557140869489" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -603,11 +596,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StockManagementTest.testCanGetACorrectLocatorCode">
+  <component name="RunManager" selected="JUnit.StockManagementTest.webServiceIsUsedIfDataIsNotPresent">
     <configuration name="StockManagementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="isbn-validator_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StockManagementTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="isbn-validator_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StockManagementTest" />
+      <option name="METHOD_NAME" value="databaseIsUsedIfDataIsPresent" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -622,6 +625,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StockManagementTest.webServiceIsUsedIfDataIsNotPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="isbn-validator_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StockManagementTest" />
+      <option name="METHOD_NAME" value="webServiceIsUsedIfDataIsNotPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ValidateISBNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="isbn-validator_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -630,40 +643,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidateISBNTest.checkInValid13DigitISBNNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="isbn-validator_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ValidateISBNTest" />
-      <option name="METHOD_NAME" value="checkInValid13DigitISBNNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidateISBNTest.checkValid13DigitISBNNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="isbn-validator_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ValidateISBNTest" />
-      <option name="METHOD_NAME" value="checkValid13DigitISBNNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.ValidateISBNTest" />
-      <item itemvalue="JUnit.ValidateISBNTest.checkValid13DigitISBNNumber" />
-      <item itemvalue="JUnit.ValidateISBNTest.checkInValid13DigitISBNNumber" />
       <item itemvalue="JUnit.StockManagementTest" />
       <item itemvalue="JUnit.StockManagementTest.testCanGetACorrectLocatorCode" />
+      <item itemvalue="JUnit.StockManagementTest.databaseIsUsedIfDataIsPresent" />
+      <item itemvalue="JUnit.StockManagementTest.webServiceIsUsedIfDataIsNotPresent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StockManagementTest.testCanGetACorrectLocatorCode" />
+        <item itemvalue="JUnit.StockManagementTest.webServiceIsUsedIfDataIsNotPresent" />
         <item itemvalue="JUnit.StockManagementTest" />
+        <item itemvalue="JUnit.StockManagementTest.databaseIsUsedIfDataIsPresent" />
+        <item itemvalue="JUnit.StockManagementTest.testCanGetACorrectLocatorCode" />
         <item itemvalue="JUnit.ValidateISBNTest" />
-        <item itemvalue="JUnit.ValidateISBNTest.checkInValid13DigitISBNNumber" />
-        <item itemvalue="JUnit.ValidateISBNTest.checkValid13DigitISBNNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -677,44 +670,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556703466041</updated>
-      <workItem from="1556703470124" duration="16939000" />
+      <workItem from="1556703470124" duration="20265000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidateISBNTest - 2019.05.01 at 16h 10m 16s.xml">
-      <configuration name="ValidateISBNTest" configurationId="JUnit" />
+    <history-entry file="StockManagementTest_databaseIsUsedIfDataIsPresent - 2019.05.06 at 11h 28m 39s.xml">
+      <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidateISBNTest - 2019.05.01 at 16h 11m 27s.xml">
-      <configuration name="ValidateISBNTest" configurationId="JUnit" />
+    <history-entry file="StockManagementTest_databaseIsUsedIfDataIsPresent - 2019.05.06 at 11h 31m 49s.xml">
+      <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidateISBNTest - 2019.05.01 at 16h 30m 32s.xml">
-      <configuration name="ValidateISBNTest" configurationId="JUnit" />
+    <history-entry file="StockManagementTest_databaseIsUsedIfDataIsPresent - 2019.05.06 at 11h 32m 47s.xml">
+      <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StockManagementTest - 2019.05.01 at 16h 42m 15s.xml">
+    <history-entry file="StockManagementTest_databaseIsUsedIfDataIsPresent - 2019.05.06 at 11h 35m 36s.xml">
+      <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StockManagementTest_databaseIsUsedIfDataIsPresent - 2019.05.06 at 11h 37m 03s.xml">
+      <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StockManagementTest_databaseIsUsedIfDataIsPresent - 2019.05.06 at 11h 38m 47s.xml">
+      <configuration name="StockManagementTest.databaseIsUsedIfDataIsPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StockManagementTest - 2019.05.06 at 12h 00m 41s.xml">
       <configuration name="StockManagementTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StockManagementTest - 2019.05.01 at 21h 21m 56s.xml">
-      <configuration name="StockManagementTest" configurationId="JUnit" />
+    <history-entry file="StockManagementTest_webServiceIsUsedIfDataIsNotPresent - 2019.05.06 at 12h 02m 38s.xml">
+      <configuration name="StockManagementTest.webServiceIsUsedIfDataIsNotPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StockManagementTest_testCanGetACorrectLocatorCode - 2019.05.01 at 22h 52m 26s.xml">
-      <configuration name="StockManagementTest.testCanGetACorrectLocatorCode" configurationId="JUnit" />
+    <history-entry file="StockManagementTest_webServiceIsUsedIfDataIsNotPresent - 2019.05.06 at 12h 03m 43s.xml">
+      <configuration name="StockManagementTest.webServiceIsUsedIfDataIsNotPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StockManagementTest - 2019.05.01 at 22h 52m 49s.xml">
-      <configuration name="StockManagementTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StockManagementTest_testCanGetACorrectLocatorCode - 2019.05.02 at 07h 01m 10s.xml">
-      <configuration name="StockManagementTest.testCanGetACorrectLocatorCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StockManagementTest_testCanGetACorrectLocatorCode - 2019.05.02 at 07h 05m 24s.xml">
-      <configuration name="StockManagementTest.testCanGetACorrectLocatorCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StockManagementTest_testCanGetACorrectLocatorCode - 2019.05.02 at 07h 15m 57s.xml">
-      <configuration name="StockManagementTest.testCanGetACorrectLocatorCode" configurationId="JUnit" />
+    <history-entry file="StockManagementTest_webServiceIsUsedIfDataIsNotPresent - 2019.05.06 at 12h 05m 42s.xml">
+      <configuration name="StockManagementTest.webServiceIsUsedIfDataIsNotPresent" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16939000" />
+    <option name="totallyTimeSpent" value="20265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -727,7 +720,7 @@
       <window_info id="Capture Tool" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.17043619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.17767988" />
+      <window_info anchor="bottom" id="Build" weight="0.17767988" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -735,7 +728,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32892805" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34508076" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4229075" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -819,23 +812,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StockManagementTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StockManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="181">
+          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding>
             <element signature="e#134#135#0" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
@@ -843,6 +823,20 @@
             <element signature="e#305#306#0" expanded="true" />
             <element signature="e#136#137#0" expanded="true" />
             <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StockManagementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="61" column="76" lean-forward="true" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
