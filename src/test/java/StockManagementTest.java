@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,26 +19,22 @@ public class StockManagementTest {
         stockManager = new StockManager();
     }
 
+    @After
+    public void tearDown() {
+        databaseService = null;
+        webService = null;
+        stockManager = null;
+    }
+
     @Test
     public void testCanGetACorrectLocatorCode() {
 
-        ExternalISBNDataService externalWebServiceStub = new ExternalISBNDataService() {
-            @Override
-            public Book lookup(String isbn) {
-                return new Book(isbn, "Of mice of men", "J Steinbeck");
-            }
-        };
+        when(webService.lookup(isbn)).thenReturn(new Book(isbn, "Of mice of men", "J Steinbeck"));
+        when(databaseService.lookup(isbn)).thenReturn(null);
 
-        ExternalISBNDataService externalDatabaseServiceStub = new ExternalISBNDataService() {
-            @Override
-            public Book lookup(String isbn) {
-                return null;
-            }
-        };
+        stockManager.setWebService(webService);
+        stockManager.setDatabaseService(databaseService);
 
-        StockManager stockManager = new StockManager();
-        stockManager.setWebService(externalWebServiceStub);
-        stockManager.setDatabaseService(externalDatabaseServiceStub);
         String locatorCode = stockManager.getLocatorCode(isbn);
         Assert.assertEquals("3504J4", locatorCode);
     }
@@ -45,14 +42,14 @@ public class StockManagementTest {
     @Test
     public void databaseIsUsedIfDataIsPresent() {
 
-        when(databaseService.lookup(isbn)).thenReturn(new Book(isbn, "abc", "def"));
+        when(databaseService.lookup(isbn)).thenReturn(new Book(isbn, "abc", "abc"));
 
         stockManager.setWebService(webService);
         stockManager.setDatabaseService(databaseService);
         stockManager.getLocatorCode(isbn);
 
         verify(databaseService, times(1)).lookup(isbn);
-        verify(webService, times(0)).lookup(anyString());
+        verify(webService, never()).lookup(anyString());
     }
 
     @Test
